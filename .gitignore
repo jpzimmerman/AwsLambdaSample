@@ -348,3 +348,12 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+#Terraform IaC state files and modules (modules will be downloaded at terraform init-time as part of CI/CD pipeline)
+*.tfstate
+.infrastructure/.[Tt]erraform/[Mm]odules
+.infrastructure/.[Tt]erraform/[Pp]roviders
+.infrastructure/[Bb]uilds
+.infrastructure/*.hcl
+.infrastructure/*.tfstate*
+
